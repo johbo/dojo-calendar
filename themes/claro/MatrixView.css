@@ -265,8 +265,8 @@
 }
 .claro .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal.Edited .bg {
   border: dashed 1px #FFF;
-  filter: formatstring("alpha(opacity={0})", 30);
   opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 .claro .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarHorizontal.Focused .bg {
   border: dashed 1px #FFF;
@@ -280,8 +280,8 @@
 .claro .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel.Edited {
   border: dashed 1px #FFF;
   background: #600;
-  filter: formatstring("alpha(opacity={0})", 30);
   opacity: 0.3;
+  filter: alpha(opacity=30);
   color: #FFF;
 }
 .claro .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel.Focused {
@@ -291,7 +291,7 @@
   position: absolute;
   left: 3px;
   right: 1px;
-  bottom: 2px;
+  bottom: 1px;
   overflow: hidden;
 }
 .claro .dojoxCalendarMatrixView .dojoxCalendarEvent.dojoxCalendarLabel .labels {
@@ -304,8 +304,8 @@
 .claro .dojoxCalendarMatrixView .dojoxCalendarEvent .handle {
   z-index: 2;
   background: #00FF00;
-  filter: formatstring("alpha(opacity={0})", 0);
   opacity: 0;
+  filter: alpha(opacity=0);
   -moz-user-select: none;
   -webkit-user-select: none;
   khtml-user-select: none;

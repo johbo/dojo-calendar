@@ -18,13 +18,13 @@
 
 .border-box(){
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	-moz-box-sizing: border-box;   
 	box-sizing: border-box;
 }
 
 .opacity(@op){
-	filter:formatstring("alpha(opacity={0})", @op);
-	opacity:@op/100;
+  opacity: @op / 100;
+  filter: e(%("alpha(opacity=%d)", @op));
 }
 
 .transition-duration(@dur: 0s){
@@ -42,7 +42,7 @@
 
 .glass-view(){
 	z-index: 2;
-	background:#00FF00; 
+	background:#00FF00;
 	.opacity(0);
 	.select-none
 }
